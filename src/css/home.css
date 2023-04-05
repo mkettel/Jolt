@@ -1,0 +1,10 @@
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.mainTitle {
+  font-size: 36px;
+  color: white;
+  font-weight: 300;
+}

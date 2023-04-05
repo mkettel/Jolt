@@ -1,7 +1,8 @@
-.App {
-  text-align: center;
-}
 
+.app {
+  height: 100%;
+  width: 100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,6 +28,22 @@
 .App-link {
   color: #61dafb;
 }
+
+/* background of the extension */
+body {
+  background-color: #2C88A1;
+  /* background-color: #f4eed8; */
+}
+
+/* NAVBAR */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
