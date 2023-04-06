@@ -8,3 +8,14 @@
   color: white;
   font-weight: 300;
 }
+
+.content {
+  min-width: 200px;
+  margin: 5px 10px;
+}
+.gridContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
