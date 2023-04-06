@@ -15,10 +15,10 @@ export const Home = () => {
         </div>
         <div className='content'>
           <div className='gridContent'>
-          <VideoPlayer />
-          <VideoPlayer />
-          <VideoPlayer />
-          <VideoPlayer />
+          <VideoPlayer1 />
+          <VideoPlayer2 />
+          <VideoPlayer1 />
+          <VideoPlayer2 />
           </div>
         </div>
       </div>
@@ -27,21 +27,41 @@ export const Home = () => {
 
 
 // components
-function VideoPlayer() {
-
-
+function VideoPlayer1() {
 
   return (
     <div className='video'>
       <ReactPlayer
         className='react-video'
-        url="videos/cc_AI.mp4"
-        width='200px'
-        height='200px'
+        url="videos/history.mp4"
+        width='100%'
+        height='100%'
         controls={true}
+        style={
+          {borderRadius: '5px'}
+        }
         />
     </div>
 
   )
 }
 // https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+function VideoPlayer2() {
+
+  return (
+    <div className='video'>
+      <ReactPlayer
+        className='react-video'
+        url="videos/math_vid.mp4"
+        width='100%'
+        height='100%'
+        controls={true}
+        style={
+          {borderRadius: '5px'}
+        }
+        />
+    </div>
+
+  )
+}
