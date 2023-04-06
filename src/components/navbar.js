@@ -1,3 +1,6 @@
+// Possibly add this component differently after building structure
+
+
 import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
