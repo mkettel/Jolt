@@ -8,6 +8,10 @@
   color: white;
   font-weight: 300;
 }
+.image {
+  height: 50px;
+  width: 50px;
+}
 
 .content {
   min-width: 200px;
@@ -19,6 +23,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 5px;
   justify-items: center;
-  /* overflow: hidden; */
-  /* overflow-y: scroll; */
+  position: relative;
+  grid-auto-columns: calc(50%);
+  grid-auto-flow: row;
+  overflow: scroll;
+  max-height: 500px;
 }

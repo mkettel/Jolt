@@ -11,7 +11,7 @@ export const Home = () => {
     return (
       <div className='appContent'>
         <div className='header'>
-          <h1 className='mainTitle'>Jolt</h1>
+          <h1 className='mainTitle'>Jolt Jade</h1>
         </div>
         <div className='content'>
           <div className='gridContent'>
@@ -65,3 +65,6 @@ function VideoPlayer2() {
 
   )
 }
+
+// ADD an image yo
+// <image className='logo' src='images/rocketship_icon.png' />
