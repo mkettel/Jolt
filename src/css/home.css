@@ -1,13 +1,25 @@
+/* FONTS */
+/* font-family: 'Satoshi', sans-serif;
+font-family: 'Ranade', sans-serif;
+font-family: 'Clash Display', sans-serif;
+font-family: 'Author', sans-serif;
+font-family: 'Panchang', sans-serif;
+font-family: 'Chillax', sans-serif;
+font-family: 'Zodiak', serif; */
+
 
 .header {
   display: flex;
   justify-content: center;
 }
 .mainTitle {
-  font-size: 36px;
-  color: white;
-  font-weight: 300;
-  margin: 10px 0px;
+
+  font-family: 'Chillax', sans-serif;
+  font-size: 42px;
+  color: #092753;
+  font-weight: 500;
+  margin: 10px 0px 0px;
+  padding: 0px;
 }
 /* Topic Section  */
 .topic {
@@ -18,7 +30,11 @@
 .topic h3 {
   margin: 0px;
   font-size: 24px;
-  color: white;
+  /* color: #092753; */
+  color: #F9E1B4;
+  font-family: 'Clash Display', sans-serif;
+  letter-spacing: 1.5;
+  font-weight: 400;
 }
 
 .image {
@@ -28,7 +44,7 @@
 
 .content {
   min-width: 200px;
-  margin: 20px 10px 0px;
+  margin: 10px 10px 0px;
   /* overflow: hidden auto; */
 }
 .gridContent {
@@ -40,7 +56,7 @@
   grid-auto-columns: calc(50%);
   grid-auto-flow: row;
   overflow: scroll;
-  max-height: 415px;
+  max-height: 425px;
 }
 
 /* Footer Will convert to component */

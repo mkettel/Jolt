@@ -30,16 +30,16 @@ export const Home = () => {
         <div className='footerContainer'>
           <div className='footer'>
             <div className='nav-item'>
-              <FontAwesomeIcon icon={icon({name: "vial"})} inverse/>
+              <FontAwesomeIcon icon={icon({name: "vial"})} color="#CFC2B0" />
             </div>
             <div className='nav-item'>
-              <FontAwesomeIcon icon={icon({name: "seedling"})} />
+              <FontAwesomeIcon icon={icon({name: "seedling"})} color="#CFC2B0" />
             </div>
             <div className='nav-item'>
-              <FontAwesomeIcon icon={icon({name: 'rocket'})} />
+              <FontAwesomeIcon icon={icon({name: 'rocket'})} color="#CFC2B0" />
             </div>
             <div className='nav-item'>
-              <FontAwesomeIcon icon={icon({name: "dna"})} />
+              <FontAwesomeIcon icon={icon({name: "dna"})} color="#CFC2B0" />
             </div>
           </div>
         </div>
