@@ -7,7 +7,20 @@
   font-size: 36px;
   color: white;
   font-weight: 300;
+  margin: 10px 0px;
 }
+/* Topic Section  */
+.topic {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.topic h3 {
+  margin: 0px;
+  font-size: 24px;
+  color: white;
+}
+
 .image {
   height: 50px;
   width: 50px;
@@ -15,7 +28,7 @@
 
 .content {
   min-width: 200px;
-  margin: 40px 10px 0px;
+  margin: 20px 10px 0px;
   /* overflow: hidden auto; */
 }
 .gridContent {
@@ -27,11 +40,19 @@
   grid-auto-columns: calc(50%);
   grid-auto-flow: row;
   overflow: scroll;
-  max-height: 400px;
+  max-height: 415px;
+}
+
+/* Footer Will convert to component */
+.footerContainer {
+  position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 .footer {
-  margin: 10px 30px 0px;
+  margin: 15px 30px 10px;
   display: flex;
   place-content: center space-between;
-  font-size: 18px;
+  font-size: 27px;
+  align-items: center;
 }

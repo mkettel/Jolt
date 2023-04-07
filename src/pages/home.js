@@ -1,17 +1,23 @@
 // import home css page
 import '../css/home.css';
 import ReactPlayer from 'react-player';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 
 
 export const Home = () => {
 
     console.log("Hi from Home.js")
+    // <FontAwesomeIcon icon={icon({name: 'rocket', family: 'sharp', style: 'solid'})} />
 
     return (
       <div className='appContent'>
         <div className='header'>
-          <h1 className='mainTitle'>Jolt Jade</h1>
+          <h1 className='mainTitle'>Jolt</h1>
+        </div>
+        <div className='topic'>
+          <h3>Science</h3>
         </div>
         <div className='content'>
           <div className='gridContent'>
@@ -21,18 +27,20 @@ export const Home = () => {
           <VideoPlayer2 />
           </div>
         </div>
-        <div className='footer'>
-          <div className='nav-item'>
-            <p>Space</p>
-          </div>
-          <div className='nav-item'>
-            <p>Rocks</p>
-          </div>
-          <div className='nav-item'>
-          <i class="fa-solid fa-rocket"></i>
-          </div>
-          <div className='nav-item'>
-            <p>Biology</p>
+        <div className='footerContainer'>
+          <div className='footer'>
+            <div className='nav-item'>
+              <FontAwesomeIcon icon={icon({name: "vial"})} inverse/>
+            </div>
+            <div className='nav-item'>
+              <FontAwesomeIcon icon={icon({name: "seedling"})} />
+            </div>
+            <div className='nav-item'>
+              <FontAwesomeIcon icon={icon({name: 'rocket'})} />
+            </div>
+            <div className='nav-item'>
+              <FontAwesomeIcon icon={icon({name: "dna"})} />
+            </div>
           </div>
         </div>
       </div>
