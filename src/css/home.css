@@ -58,17 +58,3 @@ font-family: 'Zodiak', serif; */
   overflow: scroll;
   max-height: 425px;
 }
-
-/* Footer Will convert to component */
-.footerContainer {
-  position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-.footer {
-  margin: 15px 30px 10px;
-  display: flex;
-  place-content: center space-between;
-  font-size: 27px;
-  align-items: center;
-}

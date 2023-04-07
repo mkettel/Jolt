@@ -1,15 +1,13 @@
 // import home css page
 import '../css/home.css';
 import ReactPlayer from 'react-player';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 
 
 
 export const Home = () => {
 
     console.log("Hi from Home.js")
-    // <FontAwesomeIcon icon={icon({name: 'rocket', family: 'sharp', style: 'solid'})} />
 
     return (
       <div className='appContent'>
@@ -19,30 +17,7 @@ export const Home = () => {
         <div className='topic'>
           <h3>Science</h3>
         </div>
-        <div className='content'>
-          <div className='gridContent'>
-          <VideoPlayer1 />
-          <VideoPlayer2 />
-          <VideoPlayer1 />
-          <VideoPlayer2 />
-          </div>
-        </div>
-        <div className='footerContainer'>
-          <div className='footer'>
-            <div className='nav-item'>
-              <FontAwesomeIcon icon={icon({name: "vial"})} color="#CFC2B0" />
-            </div>
-            <div className='nav-item'>
-              <FontAwesomeIcon icon={icon({name: "seedling"})} color="#CFC2B0" />
-            </div>
-            <div className='nav-item'>
-              <FontAwesomeIcon icon={icon({name: 'rocket'})} color="#CFC2B0" />
-            </div>
-            <div className='nav-item'>
-              <FontAwesomeIcon icon={icon({name: "dna"})} color="#CFC2B0" />
-            </div>
-          </div>
-        </div>
+        <VideoContainer />
       </div>
     )
   }
@@ -85,6 +60,20 @@ function VideoPlayer2() {
         />
     </div>
 
+  )
+}
+
+function VideoContainer() {
+
+  return (
+    <div className='content'>
+      <div className='gridContent'>
+      <VideoPlayer1 />
+      <VideoPlayer2 />
+      <VideoPlayer1 />
+      <VideoPlayer2 />
+      </div>
+    </div>
   )
 }
 

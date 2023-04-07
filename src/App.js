@@ -23,7 +23,7 @@ function App() {
             <Route path='/Space' element={<Space />} />
             <Route path='*' element={<Home />} />
           </Routes>
-          {/* <Navbar /> */}
+          <Navbar />
         </Router>
       </QueryClientProvider>
     </div>
