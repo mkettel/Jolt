@@ -21,6 +21,20 @@ export const Home = () => {
           <VideoPlayer2 />
           </div>
         </div>
+        <div className='footer'>
+          <div className='nav-item'>
+            <p>Space</p>
+          </div>
+          <div className='nav-item'>
+            <p>Rocks</p>
+          </div>
+          <div className='nav-item'>
+          <i class="fa-solid fa-rocket"></i>
+          </div>
+          <div className='nav-item'>
+            <p>Biology</p>
+          </div>
+        </div>
       </div>
     )
   }
