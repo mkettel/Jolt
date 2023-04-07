@@ -11,14 +11,28 @@ export const Home = () => {
     return (
       <div className='appContent'>
         <div className='header'>
-          <h1 className='mainTitle'>Jolt</h1>
+          <h1 className='mainTitle'>Jolt Jade</h1>
         </div>
         <div className='content'>
           <div className='gridContent'>
-          <VideoPlayer />
-          <VideoPlayer />
-          <VideoPlayer />
-          <VideoPlayer />
+          <VideoPlayer1 />
+          <VideoPlayer2 />
+          <VideoPlayer1 />
+          <VideoPlayer2 />
+          </div>
+        </div>
+        <div className='footer'>
+          <div className='nav-item'>
+            <p>Space</p>
+          </div>
+          <div className='nav-item'>
+            <p>Rocks</p>
+          </div>
+          <div className='nav-item'>
+          <i class="fa-solid fa-rocket"></i>
+          </div>
+          <div className='nav-item'>
+            <p>Biology</p>
           </div>
         </div>
       </div>
@@ -27,21 +41,44 @@ export const Home = () => {
 
 
 // components
-function VideoPlayer() {
-
-
+function VideoPlayer1() {
 
   return (
     <div className='video'>
       <ReactPlayer
         className='react-video'
-        url="videos/cc_AI.mp4"
-        width='200px'
-        height='200px'
+        url="videos/history.mp4"
+        width='100%'
+        height='100%'
         controls={true}
+        style={
+          {borderRadius: '5px'}
+        }
         />
     </div>
 
   )
 }
 // https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+function VideoPlayer2() {
+
+  return (
+    <div className='video'>
+      <ReactPlayer
+        className='react-video'
+        url="videos/math_vid.mp4"
+        width='100%'
+        height='100%'
+        controls={true}
+        style={
+          {borderRadius: '5px'}
+        }
+        />
+    </div>
+
+  )
+}
+
+// ADD an image yo
+// <image className='logo' src='images/rocketship_icon.png' />
