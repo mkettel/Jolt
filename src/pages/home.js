@@ -11,6 +11,7 @@ export const Home = () => {
 
     return (
       <div className='appContent'>
+        <div className="gradientWrapper"></div>
         <div className='header'>
           <h1 className='mainTitle'>Jolt</h1>
         </div>
