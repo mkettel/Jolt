@@ -7,7 +7,11 @@ font-family: 'Panchang', sans-serif;
 font-family: 'Chillax', sans-serif;
 font-family: 'Zodiak', serif; */
 
-
+.appContent {
+  position: relative;
+}
+.gradientWrapper {
+}
 .header {
   display: flex;
   justify-content: center;

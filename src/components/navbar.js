@@ -13,7 +13,9 @@ export const Navbar = () => {
     <div className='footerContainer'>
       <div className='footer'>
         <div className='nav-item'>
-          <FontAwesomeIcon icon={icon({name: "vial"})} color="#CFC2B0" />
+          <Link to="/" className="navLink">
+            <FontAwesomeIcon icon={icon({name: "vial"})} color="#CFC2B0" />
+          </Link>
         </div>
         <div className='nav-item'>
           <FontAwesomeIcon icon={icon({name: "seedling"})} color="#CFC2B0" />
