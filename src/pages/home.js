@@ -1,6 +1,8 @@
 // import home css page
 import '../css/home.css';
 import ReactPlayer from 'react-player';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 
 
@@ -14,6 +16,7 @@ export const Home = () => {
         <div className="gradientWrapper"></div>
         <div className='header'>
           <h1 className='mainTitle'>Jolt</h1>
+          <FontAwesomeIcon icon={icon({name: 'rocket'})} color="#092753" className='mainIcon'/>
         </div>
         <div className='topic'>
           <h3>Science</h3>

@@ -15,6 +15,11 @@ font-family: 'Zodiak', serif; */
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.header .mainIcon {
+  margin: 5px 0px 0px 10px;
+  font-size: 32px;
 }
 .mainTitle {
 
