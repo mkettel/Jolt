@@ -15,6 +15,9 @@ export const Home = () => {
       <div className='appContent'>
         <div className="gradientWrapper"></div>
         <Header />
+        <div className='topic'>
+          <h3>Trending</h3>
+        </div>
         <VideoContainer />
       </div>
     )

@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom'
 
 export const Header = () => {
 
+  // Make page name dynamically changed
+
+
   return (
     <div className='parent'>
       <div className='header'>
@@ -13,9 +16,6 @@ export const Header = () => {
           <h1 className='mainTitle'>Jolt</h1>
           <FontAwesomeIcon icon={icon({name: 'rocket'})} color="#092753" className='mainIcon'/>
         </div>
-      </div>
-      <div className='topic'>
-        <h3>Trending</h3>
       </div>
     </div>
 

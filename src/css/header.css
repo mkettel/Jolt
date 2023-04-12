@@ -24,18 +24,3 @@
   margin: 10px 0px 0px;
   padding: 0px;
 }
-/* Topic Section  */
-.topic {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0px;
-}
-.topic h3 {
-  margin: 0px;
-  font-size: 30px;
-  /* color: #092753; */
-  color: #F9E1B4;
-  font-family: 'Clash Display', sans-serif;
-  letter-spacing: 1.5;
-  font-weight: 400;
-}
