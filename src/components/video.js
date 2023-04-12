@@ -126,10 +126,14 @@ export const VideoList = (props) => {
 
   const filteredVideos = videos.filter(video => video.page === props.page);
 
+  // reverse order of videos showing up is the .sort method added
+
   return (
 
     <div className="video">
-      {filteredVideos.map((video) => (
+      {filteredVideos
+      .sort((a, b) => b.id - a.id)
+      .map((video) => (
         <div key={video.id} className="video-item">
           {/* <h2>{video.title}</h2> */}
           <ReactPlayer
