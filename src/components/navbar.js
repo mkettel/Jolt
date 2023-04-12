@@ -15,19 +15,19 @@ export const Navbar = () => {
       <div className='footer'>
         <div className='nav-item'>
           <Link to="/" className="navLink">
-            <FontAwesomeIcon icon={icon({name: "frog"})} color="#CFC2B0" />
+            <FontAwesomeIcon icon={icon({name: "fire-flame-curved"})} color="#CFC2B0" />
           </Link>
         </div>
         <div className='nav-item'>
-          <FontAwesomeIcon icon={icon({name: "landmark-dome"})} color="#CFC2B0" />
+          <FontAwesomeIcon icon={icon({name: "newspaper"})} color="#CFC2B0" />
         </div>
         <div className='nav-item'>
           <Link to="/Space" className='navLink'>
-            <FontAwesomeIcon icon={icon({name: 'paintbrush'})} color="#CFC2B0" />
+            <FontAwesomeIcon icon={icon({name: 'masks-theater'})} color="#CFC2B0" />
           </Link>
         </div>
         <div className='nav-item'>
-          <FontAwesomeIcon icon={icon({name: "calculator"})} color="#CFC2B0" />
+          <FontAwesomeIcon icon={icon({name: "magnifying-glass"})} color="#CFC2B0" />
         </div>
       </div>
     </div>
