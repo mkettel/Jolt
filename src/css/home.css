@@ -32,7 +32,7 @@ font-family: 'Zodiak', serif; */
 /* ****************
 *** GRID FOR VIDEOS ***
 *********************** */
-.content {
+.videoContent {
   min-width: 200px;
   margin: 10px 10px 0px;
   /* overflow: hidden auto; */
@@ -42,10 +42,20 @@ font-family: 'Zodiak', serif; */
   mask-mode: alpha; */
   /* box-shadow: inset 0px 0px 0px 1px #2C88A1; */
   /* box-shadow: 0px -10px 3px 5px #2C88A1; */
-  scrollbar-color: rebeccapurple green;
 
 }
-.gridContent {
+/* .gridContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  justify-items: center;
+  position: relative;
+  grid-auto-columns: calc(50%);
+  grid-auto-flow: row;
+  overflow: hidden scroll;
+  max-height: 425px;
+} */
+.video {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;

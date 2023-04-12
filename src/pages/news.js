@@ -2,6 +2,7 @@
 import React from 'react'
 import '../css/subpage.css';
 import { Header } from '../components/header';
+import { VideoList } from '../components/video';
 
 
 
@@ -16,6 +17,10 @@ export const News = () => {
         <Header />
         <div className='topic'>
           <h3>News</h3>
+        </div>
+
+        <div className='videoContent'>
+          <VideoList page="news"/>
         </div>
       </div>
 
