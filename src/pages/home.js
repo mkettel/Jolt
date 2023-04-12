@@ -21,7 +21,7 @@ export const Home = () => {
           </div>
         </div>
         <div className='topic'>
-          <h3>Science</h3>
+          <h3>Trending</h3>
         </div>
         <VideoContainer />
       </div>

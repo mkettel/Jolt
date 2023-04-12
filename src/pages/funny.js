@@ -1,16 +1,16 @@
 // Import React
 import React from 'react'
-import '../css/space.css';
+import '../css/news.css';
 
 
 // Create a new component
-export const Space = () => {
+export const Funny = () => {
 
-    console.log("Hi from Space.js")
+    console.log("Hi from Funny.js")
 
     return (
       <div className='header'>
-        <h1 className='mainTitle'>Space</h1>
+        <h1 className='mainTitle'>Funny</h1>
       </div>
     )
   }
