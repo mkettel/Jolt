@@ -4,13 +4,13 @@ import '../css/subpage.css';
 
 
 // Create a new component
-export const News = () => {
+export const Explore = () => {
 
-    console.log("Hi from News.js")
+    console.log("Hi from Explore.js")
 
     return (
       <div className='header'>
-        <h1 className='mainTitle'>News</h1>
+        <h1 className='mainTitle'>Explore</h1>
       </div>
     )
   }

@@ -1,6 +1,6 @@
 // Import React
 import React from 'react'
-import '../css/news.css';
+import '../css/subpage.css';
 
 
 // Create a new component
