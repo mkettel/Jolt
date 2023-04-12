@@ -91,33 +91,39 @@ export const VideoList = (props) => {
       url: "videos/science/greenhouse_gas_nyc.mp4",
       page: 'science',
     },
-    // TRENDING VIDEOS ************************
     {
       id: 14,
+      title: 'Plastic Free',
+      url: "videos/science/plastic_free.mp4",
+      page: 'science',
+    },
+    // TRENDING VIDEOS ************************
+    {
+      id: 15,
       title: 'Water-based Society',
       url: "videos/trending/water_humans.mp4",
       page: 'trending',
     },
     {
-      id: 15,
+      id: 16,
       title: 'Terrifying Planet',
       url: "videos/trending/scary_planet.mp4",
       page: 'trending',
     },
     {
-      id: 16,
+      id: 17,
       title: 'Mola Mola in the Deep Ocean',
       url: "videos/trending/mola_mola.mp4",
       page: 'trending',
     },
     {
-      id: 17,
+      id: 18,
       title: 'Kayaking off a Beautiful Waterfall',
       url: "videos/trending/kayak_waterfall.mp4",
       page: 'trending',
     },
     {
-      id: 18,
+      id: 19,
       title: 'Home Egg Science',
       url: "videos/trending/home_science_egg.mp4",
       page: 'trending',
