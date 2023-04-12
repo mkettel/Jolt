@@ -11,28 +11,9 @@ font-family: 'Zodiak', serif; */
   position: relative;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.titleContent {
-  display: flex;
-  align-items: center;
-}
-.header .mainIcon {
-  margin: 5px 0px 0px 10px;
-  font-size: 32px;
-}
-.mainTitle {
-  font-family: 'Chillax', sans-serif;
-  font-size: 42px;
-  color: #092753;
-  font-weight: 500;
-  margin: 10px 0px 0px;
-  padding: 0px;
-}
-/* Topic Section  */
+/************************
+**** Topic Section *****
+********************** */
 .topic {
   display: flex;
   justify-content: center;
@@ -40,7 +21,7 @@ font-family: 'Zodiak', serif; */
 }
 .topic h3 {
   margin: 0px;
-  font-size: 24px;
+  font-size: 30px;
   /* color: #092753; */
   color: #F9E1B4;
   font-family: 'Clash Display', sans-serif;
@@ -48,12 +29,10 @@ font-family: 'Zodiak', serif; */
   font-weight: 400;
 }
 
-.image {
-  height: 50px;
-  width: 50px;
-}
-
-.content {
+/* ****************
+*** GRID FOR VIDEOS ***
+*********************** */
+.videoContent {
   min-width: 200px;
   margin: 10px 10px 0px;
   /* overflow: hidden auto; */
@@ -63,10 +42,20 @@ font-family: 'Zodiak', serif; */
   mask-mode: alpha; */
   /* box-shadow: inset 0px 0px 0px 1px #2C88A1; */
   /* box-shadow: 0px -10px 3px 5px #2C88A1; */
-  scrollbar-color: rebeccapurple green;
 
 }
-.gridContent {
+/* .gridContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  justify-items: center;
+  position: relative;
+  grid-auto-columns: calc(50%);
+  grid-auto-flow: row;
+  overflow: hidden scroll;
+  max-height: 425px;
+} */
+.video {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;

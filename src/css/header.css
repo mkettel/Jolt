@@ -1,0 +1,26 @@
+
+/* ******************
+**** HEADER COMPONENT ****
+********************* */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleContent {
+  display: flex;
+  align-items: center;
+}
+.header .mainIcon {
+  margin: 5px 0px 0px 10px;
+  font-size: 28px;
+}
+.mainTitle {
+  font-family: 'Chillax', sans-serif;
+  font-size: 36px;
+  color: #092753;
+  font-weight: 500;
+  margin: 10px 0px 0px;
+  padding: 0px;
+}

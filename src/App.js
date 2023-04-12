@@ -3,7 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Home } from './pages/home';
-import { Space } from './pages/space';
+import { News } from './pages/news';
+import { Funny } from './pages/funny';
+import { Explore } from './pages/explore';
 import { Navbar } from './components/navbar';
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
         <Router>
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route path='/Space' element={<Space />} />
+            <Route path='/News' element={<News />} />
+            <Route path='/Funny' element={<Funny />} />
+            <Route path='/Explore' element={<Explore />} />
             <Route path='*' element={<Home />} />
           </Routes>
           <Navbar />
