@@ -3,7 +3,7 @@ import '../css/home.css';
 import ReactPlayer from 'react-player';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
-
+import { Header } from '../components/header';
 
 
 
@@ -14,15 +14,7 @@ export const Home = () => {
     return (
       <div className='appContent'>
         <div className="gradientWrapper"></div>
-        <div className='header'>
-          <div className='titleContent'>
-            <h1 className='mainTitle'>Jolt</h1>
-            <FontAwesomeIcon icon={icon({name: 'rocket'})} color="#092753" className='mainIcon'/>
-          </div>
-        </div>
-        <div className='topic'>
-          <h3>Trending</h3>
-        </div>
+        <Header />
         <VideoContainer />
       </div>
     )

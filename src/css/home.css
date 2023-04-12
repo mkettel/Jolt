@@ -11,48 +11,9 @@ font-family: 'Zodiak', serif; */
   position: relative;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.titleContent {
-  display: flex;
-  align-items: center;
-}
-.header .mainIcon {
-  margin: 5px 0px 0px 10px;
-  font-size: 32px;
-}
-.mainTitle {
-  font-family: 'Chillax', sans-serif;
-  font-size: 42px;
-  color: #092753;
-  font-weight: 500;
-  margin: 10px 0px 0px;
-  padding: 0px;
-}
-/* Topic Section  */
-.topic {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0px;
-}
-.topic h3 {
-  margin: 0px;
-  font-size: 24px;
-  /* color: #092753; */
-  color: #F9E1B4;
-  font-family: 'Clash Display', sans-serif;
-  letter-spacing: 1.5;
-  font-weight: 400;
-}
-
-.image {
-  height: 50px;
-  width: 50px;
-}
-
+/* ****************
+*** GRID FOR VIDEOS ***
+*********************** */
 .content {
   min-width: 200px;
   margin: 10px 10px 0px;
