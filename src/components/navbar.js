@@ -29,8 +29,8 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className='nav-item'>
-          <Link to="/Explore">
-            <FontAwesomeIcon icon={icon({name: "magnifying-glass"})} color="#CFC2B0" />
+          <Link to="/Science">
+            <FontAwesomeIcon icon={icon({name: "frog"})} color="#CFC2B0" />
           </Link>
         </div>
       </div>

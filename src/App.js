@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Home } from './pages/home';
 import { News } from './pages/news';
 import { Funny } from './pages/funny';
-import { Explore } from './pages/explore';
+import { Science } from './pages/science';
 import { Navbar } from './components/navbar';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
             <Route exact path='/' element={<Home />} />
             <Route path='/News' element={<News />} />
             <Route path='/Funny' element={<Funny />} />
-            <Route path='/Explore' element={<Explore />} />
+            <Route path='/Science' element={<Science />} />
             <Route path='*' element={<Home />} />
           </Routes>
           <Navbar />

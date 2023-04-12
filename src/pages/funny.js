@@ -15,7 +15,7 @@ export const Funny = () => {
       <div>
       <Header />
       <div className='topic'>
-        <h3>Funny</h3>
+        <h3>Fun</h3>
       </div>
 
       <div className='videoContent'>

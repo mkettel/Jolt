@@ -19,16 +19,61 @@ export const VideoList = (props) => {
       url: "videos/math_vid.mp4",
       page: 'trending'
     },
+    // FOR FUN VIDEOS
     {
       id: 3,
-      title: 'Math_2',
-      url: "videos/math_vid.mp4",
-      page: 'trending',
+      title: 'Tornado Debunk',
+      url: "videos/fun/tornado_debunk.mp4",
+      page: 'funny',
     },
     {
       id: 4,
-      title: 'AI',
-      url: "videos/cc_AI.mp4",
+      title: 'Balloons',
+      url: "videos/fun/balloons.mp4",
+      page: 'funny',
+    },
+    {
+      id: 5,
+      title: 'Cookie Chilling',
+      url: "videos/fun/cookie_fun.mp4",
+      page: 'funny',
+    },
+    {
+      id: 6,
+      title: 'Making Rock Candy',
+      url: "videos/fun/rock_candy.mp4",
+      page: 'funny',
+    },
+    //NEWS VIDEOS
+    {
+      id: 7,
+      title: 'Antartica Drake Passage',
+      url: "videos/news/antartica_drake.mp4",
+      page: 'news',
+    },
+    {
+      id: 8,
+      title: 'Mars Volunteers',
+      url: "videos/news/mars_news.mp4",
+      page: 'news',
+    },
+    {
+      id: 9,
+      title: 'Random World News',
+      url: "videos/news/rando_long_hair_news.mp4",
+      page: 'news',
+    },
+    {
+      id: 10,
+      title: 'Prosthetic Thumb',
+      url: "videos/news/second_thumb.mp4",
+      page: 'news',
+    },
+    // SCIENCE TOPICS
+    {
+      id: 11,
+      title: 'Prosthetic Thumb',
+      url: "videos/news/second_thumb.mp4",
       page: 'news',
     }
   ];
