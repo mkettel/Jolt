@@ -10,8 +10,7 @@ font-family: 'Zodiak', serif; */
 .appContent {
   position: relative;
 }
-.gradientWrapper {
-}
+
 .header {
   display: flex;
   justify-content: center;
