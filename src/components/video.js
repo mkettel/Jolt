@@ -6,6 +6,9 @@ import ReactPlayer from 'react-player';
 
 export const VideoList = (props) => {
 
+  // ************************************************
+  // *** Place to store mini DB of videos for now ***
+  // ************************************************
   const videos = [
     {
       id: 1,
@@ -19,7 +22,7 @@ export const VideoList = (props) => {
       url: "videos/math_vid.mp4",
       page: 'trending'
     },
-    // FOR FUN VIDEOS
+    // FOR FUN VIDEOS ************************
     {
       id: 3,
       title: 'Tornado Debunk',
@@ -44,7 +47,7 @@ export const VideoList = (props) => {
       url: "videos/fun/rock_candy.mp4",
       page: 'funny',
     },
-    //NEWS VIDEOS
+    //NEWS VIDEOS ************************
     {
       id: 7,
       title: 'Antartica Drake Passage',
@@ -69,13 +72,56 @@ export const VideoList = (props) => {
       url: "videos/news/second_thumb.mp4",
       page: 'news',
     },
-    // SCIENCE TOPICS
+    // SCIENCE TOPICS ************************
     {
       id: 11,
-      title: 'Prosthetic Thumb',
-      url: "videos/news/second_thumb.mp4",
-      page: 'news',
-    }
+      title: 'Environmental Consulting',
+      url: "videos/science/environmental_consulting.mp4",
+      page: 'science',
+    },
+    {
+      id: 12,
+      title: 'Fish Waste to Plastic',
+      url: "videos/science/fish_waste.mp4",
+      page: 'science',
+    },
+    {
+      id: 13,
+      title: 'Greenhouse Gas Effect NYC',
+      url: "videos/science/greenhouse_gas_nyc.mp4",
+      page: 'science',
+    },
+    // TRENDING VIDEOS ************************
+    {
+      id: 14,
+      title: 'Water-based Society',
+      url: "videos/trending/water_humans.mp4",
+      page: 'trending',
+    },
+    {
+      id: 15,
+      title: 'Terrifying Planet',
+      url: "videos/trending/scary_planet.mp4",
+      page: 'trending',
+    },
+    {
+      id: 16,
+      title: 'Mola Mola in the Deep Ocean',
+      url: "videos/trending/mola_mola.mp4",
+      page: 'trending',
+    },
+    {
+      id: 17,
+      title: 'Kayaking off a Beautiful Waterfall',
+      url: "videos/trending/kayak_waterfall.mp4",
+      page: 'trending',
+    },
+    {
+      id: 18,
+      title: 'Home Egg Science',
+      url: "videos/trending/home_science_egg.mp4",
+      page: 'trending',
+    },
   ];
 
   const filteredVideos = videos.filter(video => video.page === props.page);
