@@ -1,10 +1,7 @@
 import '../css/home.css';
 import ReactPlayer from 'react-player';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
-// import { Link } from 'react-router-dom'
 
-
+// CSS Located in HOME.CSS
 // Video List Component that i can use for now to display videos for each page differently
 
 export const VideoList = (props) => {
