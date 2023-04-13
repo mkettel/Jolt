@@ -124,6 +124,7 @@ export const VideoList = (props) => {
       title: 'Kayaking off a Beautiful Waterfall',
       url: "videos/trending/kayak_waterfall.mp4",
       page: 'trending',
+      shareURL: 'https://drive.google.com/file/d/1EuOofbJRuIVdNjwZNXlCvTiaYt9X51-X/view?usp=share_link'
     },
     {
       id: 19,
@@ -147,7 +148,7 @@ export const VideoList = (props) => {
 
   // Clipboard Function
   function copyToClipboard(video) {
-    navigator.clipboard.writeText(video.url)
+    navigator.clipboard.writeText(video.shareURL)
       .then(() => {
         const updatedVideos = filteredVideos.map(v => v.id === video.id ? {...v, copied: true} : {...v, copied: false});
         setFilteredVideos(updatedVideos);
