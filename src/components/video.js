@@ -14,13 +14,13 @@ export const VideoList = (props) => {
       id: 1,
       title: 'History',
       url: "videos/history.mp4",
-      page: 'trending',
+      page: 'none',
     },
     {
       id: 2,
       title: 'Math',
       url: "videos/math_vid.mp4",
-      page: 'trending'
+      page: 'none'
     },
     // FOR FUN VIDEOS ************************
     {
@@ -28,6 +28,7 @@ export const VideoList = (props) => {
       title: 'Tornado Debunk',
       url: "videos/fun/tornado_debunk.mp4",
       page: 'funny',
+      tags: ['science', 'weather', 'fun']
     },
     {
       id: 4,
@@ -141,12 +142,14 @@ export const VideoList = (props) => {
       .sort((a, b) => b.id - a.id)
       .map((video) => (
         <div key={video.id} className="video-item">
-          {/* <h2>{video.title}</h2> */}
+          <h2 className='title'>{video.title}</h2>
           <ReactPlayer
           url={video.url}
           width='100%'
           height='100%'
-          controls={true}  />
+          controls={true}
+          data-title={video.title}
+          />
         </div>
       ))}
     </div>
