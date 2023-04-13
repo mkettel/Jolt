@@ -126,7 +126,7 @@ export const VideoList = (props) => {
       id: 16,
       title: 'Terrifying Planet',
       url: "videos/trending/scary_planet.mp4",
-      page: 'trending',
+      page: ['trending', 'science'],
       shareURL: 'https://drive.google.com/file/d/1PPtDz2Eljj4WgBtdsgS5XMKxbJucl5CK/view?usp=share_link'
     },
     {
@@ -147,14 +147,14 @@ export const VideoList = (props) => {
       id: 19,
       title: 'Home Egg Science',
       url: "videos/trending/home_science_egg.mp4",
-      page: 'trending',
+      page: ['trending', 'science'],
       shareURL: 'https://drive.google.com/file/d/17UohK7wAtdauH8p8Fwt-GDj_JnIPxz_D/view?usp=share_link'
     },
   ];
 
   // sets the video.page property as the page prop when component is called on html
   const [filteredVideos, setFilteredVideos] = useState(
-    videos.filter(video => video.page === props.page) //filters so that props passed on the page is equial to video.page
+    videos.filter(video => video.page.includes(props.page)) //filters so that props passed on the page is equial to video.page
       .map(video => ({
         ...video,
         copied: false // add a new "copied" property to each video
