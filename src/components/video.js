@@ -13,6 +13,7 @@ export const VideoList = (props) => {
   // ************************************************
   // *** Place to store mini DB of videos for now ***
   // ************************************************
+
   const videos = [
     {
       id: 1,
@@ -152,6 +153,7 @@ export const VideoList = (props) => {
     },
   ];
 
+  // Uses State to update if the copy URL button is clicked while also sorting and filtering the db of videos by if the video has the correct prop.page
   // sets the video.page property as the page prop when component is called on html
   const [filteredVideos, setFilteredVideos] = useState(
     videos.filter(video => video.page.includes(props.page)) //filters so that props passed on the page is equial to video.page
@@ -169,7 +171,7 @@ export const VideoList = (props) => {
     navigator.clipboard.writeText(video.shareURL)
       .then(() => {
         const updatedVideos = filteredVideos.map(v => v.id === video.id ? {...v, copied: true} : {...v, copied: false});
-        setFilteredVideos(updatedVideos);
+        setFilteredVideos(updatedVideos); // updates state of copied property based on ID of video clicked
       })
       .catch(err => console.error('failed to copy video URL', err));
   }
