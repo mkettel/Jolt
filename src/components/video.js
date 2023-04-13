@@ -192,9 +192,9 @@ export const VideoList = (props) => {
           controls={true}
           data-title={video.title}
           />
-          <button onClick={() => copyToClipboard(video)}>
+          <button className='copyButton' onClick={() => copyToClipboard(video)}>
             {video.copied && 'Copied!'}
-            {!video.copied && <FontAwesomeIcon icon={icon({name: "link"})} color="#CFC2B0" />}
+            {!video.copied && <FontAwesomeIcon icon={icon({name: "link"})} color="#ffffff" />}
           </button>
         </div>
       ))}
