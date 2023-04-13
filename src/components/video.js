@@ -1,10 +1,12 @@
 import '../css/home.css';
 import ReactPlayer from 'react-player';
+import { useState } from 'react';
 
 // CSS Located in HOME.CSS
 // Video List Component that i can use for now to display videos for each page differently
 
 export const VideoList = (props) => {
+
 
   // ************************************************
   // *** Place to store mini DB of videos for now ***
@@ -131,15 +133,36 @@ export const VideoList = (props) => {
     },
   ];
 
-  const filteredVideos = videos.filter(video => video.page === props.page);
+  // sets the video.page property as the page prop when component is called on html
+  const [filteredVideos, setFilteredVideos] = useState(
+    videos.filter(video => video.page === props.page) //filters so that props passed on the page is equial to video.page
+      .map(video => ({
+        ...video,
+        copied: false // add a new "copied" property to each video
+      }))
+  );
 
-  // reverse order of videos showing up is the .sort method added
+
+
+
+  // Clipboard Function
+  function copyToClipboard(video) {
+    navigator.clipboard.writeText(video.url)
+      .then(() => {
+        const updatedVideos = filteredVideos.map(v => v.id === video.id ? {...v, copied: true} : {...v, copied: false});
+        setFilteredVideos(updatedVideos);
+      })
+      .catch(err => console.error('failed to copy video URL', err));
+  }
+
+
+
 
   return (
 
     <div className="video">
       {filteredVideos
-      .sort((a, b) => b.id - a.id)
+      .sort((a, b) => b.id - a.id) // reverse order of videos showing up
       .map((video) => (
         <div key={video.id} className="video-item">
           <h2 className='title'>{video.title}</h2>
@@ -150,6 +173,10 @@ export const VideoList = (props) => {
           controls={true}
           data-title={video.title}
           />
+          <button onClick={() => copyToClipboard(video)}>
+            {video.copied && 'Copied!'}
+            {!video.copied && 'Copy URL'}
+          </button>
         </div>
       ))}
     </div>
