@@ -1,5 +1,7 @@
 import '../css/home.css';
 import ReactPlayer from 'react-player';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { useState } from 'react';
 
 // CSS Located in HOME.CSS
@@ -192,7 +194,7 @@ export const VideoList = (props) => {
           />
           <button onClick={() => copyToClipboard(video)}>
             {video.copied && 'Copied!'}
-            {!video.copied && 'Copy URL'}
+            {!video.copied && <FontAwesomeIcon icon={icon({name: "link"})} color="#CFC2B0" />}
           </button>
         </div>
       ))}
