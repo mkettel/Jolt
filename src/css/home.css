@@ -35,27 +35,9 @@ font-family: 'Zodiak', serif; */
 .videoContent {
   min-width: 200px;
   margin: 10px 10px 0px;
-  /* overflow: hidden auto; */
-  /* mask-image: linear-gradient(rgb(0, 0, 0), transparent); */
-  /* mask-border: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.274));
-  mask-border-width: 0px 0px 20px 0px;
-  mask-mode: alpha; */
-  /* box-shadow: inset 0px 0px 0px 1px #2C88A1; */
-  /* box-shadow: 0px -10px 3px 5px #2C88A1; */
-
 }
-/* .gridContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  justify-items: center;
-  position: relative;
-  grid-auto-columns: calc(50%);
-  grid-auto-flow: row;
-  overflow: hidden scroll;
-  max-height: 425px;
-} */
 .video {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
@@ -66,3 +48,25 @@ font-family: 'Zodiak', serif; */
   overflow: hidden scroll;
   max-height: 425px;
 }
+.video-item {
+  position: relative;
+}
+
+/* ****** VIDEO TITLE OVERLAY IF I WANT ************** */
+/* *************************************************** */
+.video-item .title {
+  position: absolute;
+  opacity: 0;
+  transition: .3s;
+}
+/* .video-item:hover .title {
+  opacity: 1;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  color: black;
+  transition: .3s;
+} */
