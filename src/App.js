@@ -12,8 +12,8 @@ function App() {
 
   console.log("Hi from App.js")
 
-
   const client = new QueryClient();
+
 
   return (
     <div className="App">
