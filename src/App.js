@@ -7,14 +7,14 @@ import { News } from './pages/news';
 import { Funny } from './pages/funny';
 import { Science } from './pages/science';
 import { Navbar } from './components/navbar';
-import { VideoForm } from './pages/form';
+import { AddVideoForm } from './pages/form';
 
 function App() {
 
   console.log("Hi from App.js")
 
-
   const client = new QueryClient();
+
 
   return (
     <div className="App">
@@ -26,7 +26,7 @@ function App() {
             <Route path='/News' element={<News />} />
             <Route path='/Funny' element={<Funny />} />
             <Route path='/Science' element={<Science />} />
-            <Route path='/video-form' element={<VideoForm />} />
+            <Route path='/video-form' element={<AddVideoForm />} />
             <Route path='*' element={<Home />} />
           </Routes>
           <Navbar />
