@@ -20,7 +20,7 @@ export const News = () => {
         </div>
 
         <div className='videoContent'>
-          <VideoList page="news"/>
+          <VideoList page="news" />
         </div>
       </div>
 

@@ -250,4 +250,10 @@ export const VideoList = (props) => {
 
 export const VideoForm = (props) => {
 
+  console.log("howdy from VideoForm")
+
+  return (
+    <h1>Howdy from the form</h1>
+  );
+
 }
