@@ -9,6 +9,7 @@ import { useState } from 'react';
 // ************************************************
 // *** Place to store mini DB of videos for now ***
 // ************************************************
+
 const videos = [
   {
     id: 1,
@@ -151,6 +152,8 @@ const videos = [
 // ****************************************
 // ********* Video List Component *********
 // ****************************************
+
+
 export const VideoList = (props) => {
 
   // filter videos based on the page prop passed to the component
@@ -188,27 +191,31 @@ export const VideoList = (props) => {
 
   // Grab the item being dragged
   function handleDragStart(e, video) {
-    setDragItem(video); // set the item being dragged to be the video object
-    e.dataTransfer.setData('text/plain', dragItem); // set the data value of the item being dragged shareURL
-    e.dataTransfer.dropEffect = 'copy'; // set the drop effect to be copy
+    setDragItem(video.shareURL); // set the item being dragged to be the video object
+    e.dataTransfer.setData('text/plain', dragItem);
+    // e.dataTransfer.dropEffect = 'copy'; // set the drop effect to be copy
 
   }
+
+
+
   function handleDragEnd(e, video) {
     e.preventDefault();
     console.log(dragItem)
   }
-  // // When the item is dropped over the drop zone
-  // function handleDragOver(e) {
-  //   e.preventDefault();
-  //   e.dataTransfer.dropEffect = 'copy';
-  // }
-  // // When the item is dropped in the drop zone
-  // function dropHandler(e) {
-  //   e.preventDefault();
-  //   const data = e.dataTransfer.getData('text/plain');
-  //   window.open('https://www.facebook.com/sharer/sharer.php?u=' + data, '_blank', 'width=600,height=400') // copies to new tab if dragged there.
-  //   e.target.value = data;
-  // }
+
+  // When the item is dropped over the drop zone
+  function handleDragOver(e) {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'copy';
+  }
+  // When the item is dropped in the drop zone
+  function dropHandler(e) {
+    e.preventDefault();
+    const data = e.dataTransfer.getData('text/plain');
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + data, '_blank', 'width=600,height=400') // copies to new tab if dragged there.
+    e.target.value = data;
+  }
 
 
 
@@ -250,10 +257,80 @@ export const VideoList = (props) => {
 
 export const VideoForm = (props) => {
 
-  console.log("howdy from VideoForm")
+  // Video Addition Form to Add New videos to videos array
+  // 1. Create a form that takes in a video URL
+  // 2. Create a form that takes in a video title
+  // 3. Create a form that takes in a video page
+  // 4. Create a form that takes in a video shareURL
+  // 5. Create a button that adds the video to the videos array
+  // 6. Create a button that removes the video from the videos array
+  // Update the state of the videos array to include the new video
+
+
+  // States
+  const [videoURL, setVideoURL] = useState('');
+  const [videoTitle, setVideoTitle] = useState('');
+  const [videoPage, setVideoPage] = useState('');
+  const [videoShareURL, setVideoShareURL] = useState('');
+
+  // Functions
+  function addVideoUrl(e) {
+    setVideoURL(e.target.value);
+  }
+
+  function addVideoTitle(e) {
+    setVideoTitle(e.target.value.capitalize());
+  }
+
+  function addVideoPage(e) {
+    setVideoPage(e.target.value);
+  }
+
+  function addVideoShareURL(e) {
+    setVideoShareURL(e.target.value);
+  }
+
+  function addVideo() {
+    console.log("add video button clicked")
+    console.log(videoURL)
+    console.log(videoTitle)
+    console.log(videoPage)
+    console.log(videoShareURL)
+
+    // add video to videos array
+    videos.push({
+      id: videos.length + 1,
+      title: videoTitle,
+      url: videoURL,
+      page: videoPage,
+      shareURL: videoShareURL
+    })
+
+    //Update state of videos array to display new video added to the array
+    props.setVideos(videos);
+
+
+    console.log(videos)
+  }
+
 
   return (
-    <h1>Howdy from the form</h1>
+
+    <div className="video-form">
+      <h2>Add a Video</h2>
+      <form>
+        <label>Video URL</label>
+        <input type="text" onChange={addVideoUrl} />
+        <label>Video Title</label>
+        <input type="text" onChange={addVideoTitle} />
+        <label>Video Page</label>
+        <input type="text" onChange={addVideoPage} />
+        <label>Video Share URL</label>
+        <input type="text" onChange={addVideoShareURL} />
+        <button type="button" onClick={addVideo}>Add Video</button>
+      </form>
+    </div>
   );
+
 
 }
