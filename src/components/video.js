@@ -147,6 +147,13 @@ const videos = [
     page: ['trending', 'science'],
     shareURL: 'https://drive.google.com/file/d/17UohK7wAtdauH8p8Fwt-GDj_JnIPxz_D/view?usp=share_link'
   },
+  {
+    id: 20,
+    title: 'What are Waves?',
+    url: "https://www.youtube.com/watch?v=2Xb6Ao6s8KQ&list=PL2AC33DF4C97B904A&index=8",
+    page: ['science'],
+    shareURL: 'https://www.youtube.com/watch?v=2Xb6Ao6s8KQ&list=PL2AC33DF4C97B904A&index=8'
+  }
 ];
 
 // ****************************************
