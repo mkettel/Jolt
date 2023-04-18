@@ -2,6 +2,7 @@ import '../css/home.css';
 import ReactPlayer from 'react-player';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import ReactDOMServer from 'react-dom/server'
 import { useState } from 'react';
 
 
@@ -174,6 +175,12 @@ export const VideoList = (props) => {
   }
 
   // DRAG AND DROP FUNCTIONALITY ----------------------------
+  // 1. grab the video data on drag
+  // 2. display the video in formats based on drop:
+  // Will need a conditional of some sort to tell which one to use?
+    // - HTML for some usecases
+    // - New Window for opening in other tabs (share.url)
+    // - Link to ShareURL
 
   // States
   const [dragItem, setDragItem] = useState(''); // item being dragged data values
@@ -181,24 +188,27 @@ export const VideoList = (props) => {
 
   // Grab the item being dragged
   function handleDragStart(e, video) {
-    setDragItem(video.shareURL); // set the item being dragged to be the video object
-    e.dataTransfer.setData('text/plain', video.shareURL); // set the data value of the item being dragged shareURL
+    setDragItem(video); // set the item being dragged to be the video object
+    e.dataTransfer.setData('text/plain', dragItem); // set the data value of the item being dragged shareURL
     e.dataTransfer.dropEffect = 'copy'; // set the drop effect to be copy
 
   }
-  // When the item is dropped over the drop zone
-  function handleDragOver(e) {
+  function handleDragEnd(e, video) {
     e.preventDefault();
-    e.dataTransfer.dropEffect = 'copy';
+    console.log(dragItem)
   }
-  // When the item is dropped in the drop zone
-  function dropHandler(e) {
-    e.preventDefault();
-    const data = e.dataTransfer.getData('text/plain');
-    window.open('https://www.facebook.com/sharer/sharer.php?u=' + data, '_blank', 'width=600,height=400')
-    e.target.value = data;
-  }
-
+  // // When the item is dropped over the drop zone
+  // function handleDragOver(e) {
+  //   e.preventDefault();
+  //   e.dataTransfer.dropEffect = 'copy';
+  // }
+  // // When the item is dropped in the drop zone
+  // function dropHandler(e) {
+  //   e.preventDefault();
+  //   const data = e.dataTransfer.getData('text/plain');
+  //   window.open('https://www.facebook.com/sharer/sharer.php?u=' + data, '_blank', 'width=600,height=400') // copies to new tab if dragged there.
+  //   e.target.value = data;
+  // }
 
 
 
@@ -213,6 +223,7 @@ export const VideoList = (props) => {
         className="video-item"
         draggable="true"
         onDragStart={(e) => handleDragStart(e, video)}
+        onDragEnd={(e) => handleDragEnd(e, video)}
         >
           <h2 className='title'>{video.title}</h2>
           <ReactPlayer
