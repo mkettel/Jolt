@@ -5,12 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { Header } from '../components/header';
 import { useState } from 'react';
+import { VideoForm } from '../components/video';
 
 
 
 export const AddVideoForm = () => {
 
   return (
-    <h1>Hi form</h1>
+    <>
+      <VideoForm />
+    </>
   )
 }
