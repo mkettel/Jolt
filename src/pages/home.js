@@ -12,7 +12,6 @@ export const Home = () => {
 
     console.log("Hi from Home.js")
 
-
     return (
       <div className='appContent'>
         <div className="gradientWrapper"></div>
