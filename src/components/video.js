@@ -149,10 +149,16 @@ const videos = [
   }
   // {
   //   id: 20,
-  //   title: 'What are Waves?',
-  //   url: "https://www.youtube.com/watch?v=2Xb6Ao6s8KQ&list=PL2AC33DF4C97B904A&index=8",
+  //   title: 'Knife Steel',
+  //   url: "https://www.tiktok.com/@engineeredlabs/video/7223875241070628138",
   //   page: ['science'],
-  //   shareURL: 'https://www.youtube.com/watch?v=2Xb6Ao6s8KQ&list=PL2AC33DF4C97B904A&index=8'
+  //   shareURL: "https://www.tiktok.com/@engineeredlabs/video/7223875241070628138?is_from_webapp=1&sender_device=pc&web_id=7224204731031602731",
+  //   tiktok: true,
+  //   videoID: 7223875241070628138,
+  //   author: "engineeredlabs",
+  //   description: "Crazy what goes into a small pocket knife! These ones are from @GiantMouse",
+  //   soundTitle: "♬ original sound - Engineered Labs",
+  //   soundID: 7223875228143864618
   // }
 ];
 
@@ -176,6 +182,7 @@ export const VideoList = (props) => {
 
   // Clipboard Function
   function copyToClipboard(video) {
+    console.log(video)
     navigator.clipboard.writeText(video.shareURL)
       .then(() => {
         const updatedVideos = filteredVideos.map(v => v.id === video.id ? {...v, copied: true} : {...v, copied: false});
@@ -237,17 +244,17 @@ export const VideoList = (props) => {
         onDragEnd={(e) => handleDragEnd(e, video)}
         >
           <h2 className='title'>{video.title}</h2>
-          <ReactPlayer
-          url={video.url}
-          width='100%'
-          height='100%'
-          controls={true}
-          data-title={video.title}
-          />
-          <button className='copyButton' onClick={() => copyToClipboard(video)}>
-            {video.copied && 'Copied!'}
-            {!video.copied && <FontAwesomeIcon icon={icon({name: "link"})} color="#ffffff" />}
-          </button>
+            <ReactPlayer
+            url={video.url}
+            width='100%'
+            height='100%'
+            controls={true}
+            data-title={video.title}
+            />
+            <button className='copyButton' onClick={() => copyToClipboard(video)}>
+              {video.copied && 'Copied!'}
+              {!video.copied && <FontAwesomeIcon icon={icon({name: "link"})} color="#ffffff" />}
+            </button>
         </div>
       ))}
     </div>

@@ -97,3 +97,10 @@ font-family: 'Zodiak', serif; */
   font-size: 16px;
   color: white; /* text color */
 }
+
+
+/* Tiktok embed */
+.tiktok-embed {
+  max-width: 605px;
+  min-width: 325px;
+}
