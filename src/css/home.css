@@ -16,14 +16,15 @@ font-family: 'Zodiak', serif; */
 ********************** */
 .topic {
   display: flex;
-  justify-content: center;
-  margin: 10px 0px;
+  justify-content: flex-start;
+  margin: 10px 0px 0px 15px;
 }
 .topic h3 {
   margin: 0px;
-  font-size: 30px;
+  font-size: 37px;
   /* color: #092753; */
-  color: #F9E1B4;
+  /* color: #F9E1B4; Latest Color */
+  color: #457B9D;
   font-family: 'Clash Display', sans-serif;
   letter-spacing: 1.5;
   font-weight: 400;
@@ -34,7 +35,7 @@ font-family: 'Zodiak', serif; */
 *********************** */
 .videoContent {
   min-width: 200px;
-  margin: 10px 10px 0px;
+  margin: 0px 10px 0px;
 }
 .video {
   position: relative;

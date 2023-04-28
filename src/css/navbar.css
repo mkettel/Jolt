@@ -6,7 +6,9 @@
   /* mask-image: linear-gradient(black, transparent);
   mask-mode: alpha;  kinda cool though !!!*/
 
-  box-shadow: 0px -14px 10px 12px #2C88A1;
+  /* box-shadow: 0px -14px 10px 12px #2C88A1; */
+  box-shadow: 0px -14px 10px 12px #f4f1de;
+  background-color: #F4F1DE; /* makes it so the lines are not visible */
 
 }
 .footer {
