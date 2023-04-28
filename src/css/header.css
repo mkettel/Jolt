@@ -5,8 +5,10 @@
 
 .header {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  justify-content: flex-start;
+  margin: 0px 0px 0px 20px;
 }
 .titleContent {
   display: flex;
@@ -19,7 +21,9 @@
 .mainTitle {
   font-family: 'Chillax', sans-serif;
   font-size: 36px;
-  color: #092753;
+  /* color: #092753;  Main Title */
+  /* color: #1D3557;  Main Title */
+  color: #e07a5f;  /* Main Title */
   font-weight: 500;
   margin: 10px 0px 0px;
   padding: 0px;
