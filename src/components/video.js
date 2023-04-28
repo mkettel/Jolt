@@ -159,6 +159,13 @@ const videos = [
   //   description: "Crazy what goes into a small pocket knife! These ones are from @GiantMouse",
   //   soundTitle: "♬ original sound - Engineered Labs",
   //   soundID: 7223875228143864618
+  // },
+  // {
+  //   id: 21,
+  //   title: 'Shane Gillis',
+  //   url: "https://www.youtube.com/watch?v=cneVuzJDbUU",
+  //   page: ['trending'],
+  //   shareURL: "https://www.youtube.com/watch?v=cneVuzJDbUU"
   // }
 ];
 
@@ -191,6 +198,7 @@ export const VideoList = (props) => {
       .catch(err => console.error('failed to copy video URL', err));
   }
 
+  // --------------------------------------------------------------------------
   // DRAG AND DROP FUNCTIONALITY ----------------------------
   // 1. grab the video data on drag
   // 2. display the video in formats based on drop:
@@ -227,7 +235,7 @@ export const VideoList = (props) => {
   //   window.open('https://www.facebook.com/sharer/sharer.php?u=' + data, '_blank', 'width=600,height=400') // copies to new tab if dragged there.
   //   e.target.value = data;
   // }
-
+// -----------------------------------------------------------------------
 
 
   return (
