@@ -199,7 +199,8 @@ export const VideoList = (props) => {
   }
 
   // --------------------------------------------------------------------------
-  // DRAG AND DROP FUNCTIONALITY ----------------------------
+  // --------------------------------------------------------------------------
+  // DRAG AND DROP FUNCTIONALITY ----------------------------------------------
   // 1. grab the video data on drag
   // 2. display the video in formats based on drop:
   // Will need a conditional of some sort to tell which one to use?
@@ -235,6 +236,7 @@ export const VideoList = (props) => {
   //   window.open('https://www.facebook.com/sharer/sharer.php?u=' + data, '_blank', 'width=600,height=400') // copies to new tab if dragged there.
   //   e.target.value = data;
   // }
+// -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
 
 
