@@ -34,7 +34,7 @@
   text-align: center;
   color: white;
   transition: .3s;
-  filter: drop-shadow(2px 4px 5px black);
+  filter: drop-shadow(2px 2px 3px black);
   font-size: 16px;
   font-weight: 500;
   width: 100%;
