@@ -1,4 +1,5 @@
 import '../css/home.css';
+import '../css/videos.css';
 import ReactPlayer from 'react-player';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
