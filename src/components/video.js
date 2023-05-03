@@ -247,11 +247,10 @@ export const VideoList = (props) => {
 // -----------------------------------------------------------------------
 
 
+
   return (
 
     <>
-      {}
-
       <div className="video">
         {filteredVideos
         .sort((a, b) => b.id - a.id) // reverse order of videos showing up

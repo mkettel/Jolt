@@ -18,3 +18,11 @@
   font-size: 27px;
   align-items: center;
 }
+.footerContainer .footer .nav-item .navIcon {
+  color: #3d405b;
+  transition: .3s;
+}
+.footerContainer .footer .nav-item:hover .navIcon {
+  color: #3d405bad;
+  transition: .3s;
+}
