@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ReactDOMServer from 'react-dom/server'
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Form } from '../pages/form';
 
 
 
@@ -15,6 +17,7 @@ import { useState } from 'react';
 
 export const VideoList = (props) => {
 
+  const location = useLocation
 
   // ************************************************
   // *** Place to store mini DB of videos for now ***
@@ -179,6 +182,7 @@ export const VideoList = (props) => {
     // }
   ];
 
+
   // filter videos based on the page prop passed to the component
   // sets the video.page property as the page prop when component is called on html
   const [filteredVideos, setFilteredVideos] = useState(
@@ -245,46 +249,39 @@ export const VideoList = (props) => {
 
   return (
 
-    <div className="video">
-      {filteredVideos
-      .sort((a, b) => b.id - a.id) // reverse order of videos showing up
-      .map((video) => (
-        <div
-        key={video.id}
-        className="video-item"
-        draggable="true"
-        onDragStart={(e) => handleDragStart(e, video)}
-        onDragEnd={(e) => handleDragEnd(e, video)}
-        >
-          <h2 className='title'>{video.title}</h2>
-            <ReactPlayer
-            url={video.url}
-            width='100%'
-            height='100%'
-            controls={true}
-            data-title={video.title}
-            />
-            <button className='copyButton' onClick={() => copyToClipboard(video)}>
-              {video.copied && 'Copied!'}
-              {!video.copied && <FontAwesomeIcon icon={icon({name: "link"})} color="#ffffff" />}
-            </button>
-        </div>
-      ))}
-      <>
-        <Form videos={videos} />
-      </>
-    </div>
+    <>
+      {}
+
+      <div className="video">
+        {filteredVideos
+        .sort((a, b) => b.id - a.id) // reverse order of videos showing up
+        .map((video) => (
+          <div
+          key={video.id}
+          className="video-item"
+          draggable="true"
+          onDragStart={(e) => handleDragStart(e, video)}
+          onDragEnd={(e) => handleDragEnd(e, video)}
+          >
+            <h2 className='title'>{video.title}</h2>
+              <ReactPlayer
+              url={video.url}
+              width='100%'
+              height='100%'
+              controls={true}
+              data-title={video.title}
+              />
+              <button className='copyButton' onClick={() => copyToClipboard(video)}>
+                {video.copied && 'Copied!'}
+                {!video.copied && <FontAwesomeIcon icon={icon({name: "link"})} color="#ffffff" />}
+              </button>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
 
-function Form({videos}) {
-
-  console.log(videos)
-
-  return (
-    <>
-      <h2>Video Add Form</h2>
-    </>
-  )
-}
+// {location.pathname === '/form' && <Form videos={videos} />}
+// <Form videos={videos} />

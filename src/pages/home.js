@@ -21,7 +21,7 @@ export const Home = () => {
         </div>
 
         <div className='videoContent'>
-          <VideoList page="trending"/>
+          <VideoList page="trending" />
         </div>
       </div>
     )
