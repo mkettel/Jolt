@@ -15,22 +15,22 @@ export const Navbar = () => {
       <div className='footer'>
         <div className='nav-item'>
           <Link to="/" className="navLink">
-            <FontAwesomeIcon icon={icon({name: "fire-flame-curved"})} color="#3d405b" />
+            <FontAwesomeIcon icon={icon({name: "fire-flame-curved"})} color="#3d405b" className='navIcon' />
           </Link>
         </div>
         <div className='nav-item'>
           <Link to="/News" className='navLink'>
-            <FontAwesomeIcon icon={icon({name: "newspaper"})} color="#3d405b" />
+            <FontAwesomeIcon icon={icon({name: "newspaper"})} color="#3d405b" className='navIcon' />
           </Link>
         </div>
         <div className='nav-item'>
           <Link to="/Funny" className='navLink'>
-            <FontAwesomeIcon icon={icon({name: 'masks-theater'})} color="#3d405b" />
+            <FontAwesomeIcon icon={icon({name: 'masks-theater'})} color="#3d405b" className='navIcon' />
           </Link>
         </div>
         <div className='nav-item'>
           <Link to="/Science">
-            <FontAwesomeIcon icon={icon({name: "frog"})} color="#3d405b" />
+            <FontAwesomeIcon icon={icon({name: "frog"})} color="#3d405b" className='navIcon' />
           </Link>
         </div>
       </div>

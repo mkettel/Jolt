@@ -7,7 +7,8 @@ import { News } from './pages/news';
 import { Funny } from './pages/funny';
 import { Science } from './pages/science';
 import { Navbar } from './components/navbar';
-import { AddVideoForm } from './pages/form';
+import { Form } from './pages/form';
+
 
 function App() {
 
@@ -22,11 +23,11 @@ function App() {
         <Router>
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route path='/News' element={<News />} />
+            <Route path='/News' element={<News />}  />
             <Route path='/Funny' element={<Funny />} />
             <Route path='/Science' element={<Science />} />
-            <Route path='*' element={<Home />} />
-            <Route path='/Form' element={<AddVideoForm />} />
+            <Route path='*' element={<h2>404 Page Not Found</h2>} />
+            <Route path='/form' element={<Form />} />
           </Routes>
           <Navbar />
         </Router>
