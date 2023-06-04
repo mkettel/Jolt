@@ -7,8 +7,10 @@
   mask-mode: alpha;  kinda cool though !!!*/
 
   /* box-shadow: 0px -14px 10px 12px #2C88A1; */
-  box-shadow: 0px -14px 10px 12px #f4f1de;
-  background-color: #F4F1DE; /* makes it so the lines are not visible */
+  /* box-shadow: 0px -14px 10px 12px #f4f1de; */
+  box-shadow: 0px -14px 10px 12px #ADD8E6;
+  /* background-color: #F4F1DE; makes it so the lines are not visible */
+  background-color: #ADD8E6; /* blue to match for presentation */
 
 }
 .footer {
@@ -20,9 +22,11 @@
 }
 .footerContainer .footer .nav-item .navIcon {
   color: #3d405b;
+  color: #3A0CA3; /* stripe dark color for blue theme */
   transition: .3s;
 }
 .footerContainer .footer .nav-item:hover .navIcon {
-  color: #3d405bad;
+  color: #3d405b;
+  color: #4361EE; /* stripe light color for blue theme */
   transition: .3s;
 }

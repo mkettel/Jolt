@@ -26,7 +26,7 @@ function App() {
             <Route path='/News' element={<News />}  />
             <Route path='/Funny' element={<Funny />} />
             <Route path='/Science' element={<Science />} />
-            <Route path='*' element={<h2>404 Page Not Found</h2>} />
+            <Route path='*' element={<Home />} />
             <Route path='/form' element={<Form />} />
           </Routes>
           <Navbar />

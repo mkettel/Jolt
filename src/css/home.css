@@ -24,8 +24,9 @@ font-family: 'Zodiak', serif; */
   font-size: 36px;
   /* color: #092753; */
   /* color: #F9E1B4; Latest Color */
-  color: #457B9D; /* A nice color but not part of strips */
-  color: #3d405b;
+  color: #457B9D; /* A nice color but not part of stripes */
+  color: #3d405b; /* the v1 color */
+  color: #3A0CA3; /* stripe dark color for blue theme */
   font-family: 'Clash Display', sans-serif;
   letter-spacing: 1.5;
   font-weight: 500;

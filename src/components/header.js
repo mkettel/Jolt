@@ -14,7 +14,7 @@ export const Header = () => {
       <div className='header'>
         <div className='titleContent'>
           <h1 className='mainTitle'>Jolt</h1>
-          <FontAwesomeIcon icon={icon({name: 'rocket'})} color="#3d405b" className='mainIcon'/>
+          <FontAwesomeIcon icon={icon({name: 'rocket'})} color="#3A0CA3" className='mainIcon'/>
         </div>
       </div>
     </div>
