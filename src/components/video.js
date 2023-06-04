@@ -159,6 +159,13 @@ export const VideoList = (props) => {
       url: "videos/trending/home_science_egg.mp4",
       page: ['trending', 'science'],
       shareURL: 'https://drive.google.com/file/d/17UohK7wAtdauH8p8Fwt-GDj_JnIPxz_D/view?usp=share_link'
+    },
+    {
+      id: 20,
+      title: 'Diamonds in Space',
+      url: 'videos/science/diamond-tik-tok.mp4',
+      shareURL: 'https://drive.google.com/file/d/1bKrRy_rjcAnSmqLeYj7cvZ7YbY8BawQQ/view?usp=sharing',
+      page: ['science', 'trending']
     }
     // {
     //   id: 20,
